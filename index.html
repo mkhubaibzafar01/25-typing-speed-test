@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="logo">⌨</div>
+      <p class="eyebrow">IMPROVE YOUR SKILLS</p>
+      <h1>Typing Speed Test</h1>
+      <p class="subtitle">How fast can you type?</p>
+    </header>
+
+    <section class="stats">
+      <div class="stat">
+        <span>Time Left</span>
+        <strong id="time">60s</strong>
+      </div>
+      <div class="stat">
+        <span>Speed</span>
+        <strong id="wpm">0 <small>WPM</small></strong>
+      </div>
+      <div class="stat">
+        <span>Accuracy</span>
+        <strong id="accuracy">100%</strong>
+      </div>
+    </section>
+
+    <section class="test-card">
+      <div id="textDisplay" class="text-display"></div>
+
+      <textarea
+        id="typingInput"
+        placeholder="Start typing the text above..."
+        aria-label="Type the displayed text here"
+        spellcheck="false"
+        autocomplete="off"
+        autocapitalize="off"
+      ></textarea>
+
+      <div class="bottom-row">
+        <span id="progress">0 characters typed</span>
+        <button id="restartButton" type="button">↻ Restart</button>
+      </div>
+    </section>
+
+    <section id="result" class="result" hidden>
+      <h2>Test Complete! 🎉</h2>
+      <p id="resultMessage"></p>
+      <button id="tryAgainButton" type="button">Try Again</button>
+    </section>
+
+    <footer>Practice daily. Type faster. Get better.</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
